@@ -27,10 +27,6 @@ function Home({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Button
-        title="Go to Wojciech's profile"
-        onPress={() => linkTo("/stack/user/Wojciech/22")}
-      />
-      <Button
         title="Go to unknown profile"
         onPress={() => navigation.navigate("Profile")}
       />
