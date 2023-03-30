@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-pixi-signature-crash",
-    "slug": "expo-pixi-signature-crash",
+    "name": "NestedDeepLinking",
+    "slug": "nesteddeeplinking",
     "scheme":"myapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.kirtik.expopixisignaturecrash"
+      "package": "com.kirtik.nesteddeeplinking"
     },
     "web": {
       "favicon": "./assets/favicon.png"
