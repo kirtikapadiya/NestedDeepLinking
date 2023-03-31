@@ -39,8 +39,7 @@ function Profile({ route }) {
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Hello {route.params?.id || "Unknown"}!</Text>
       <Text>
-        Type of age parameter is{" "}
-        {route.params?.age ? typeof route.params.age : "undefined"}
+        Hello from profile
       </Text>
     </View>
   );
@@ -64,15 +63,15 @@ const HomeStack = () => {
     </MyStack.Navigator>
   );
 };
-const MyTabs = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer linking={linking}>
-      <MyTabs.Navigator>
-        <MyTabs.Screen name="HomeStack" component={HomeStack} />
-        <MyTabs.Screen name="Settings" component={Settings} />
-      </MyTabs.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="HomeStack" component={HomeStack} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
